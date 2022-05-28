@@ -5,19 +5,51 @@
   --accent-color: #2196f3;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid red;
+}
+
 .list {
   list-style: none;
 }
+
 .link {
   text-decoration: none;
   font-style: normal;
 }
 
 /* =============HEADER================*/
+.header {
+  padding-top: 24px;
+}
 
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -66,7 +98,13 @@ body {
 
 /* =============HIRO================*/
 
+.hiro {
+  background-color: #212121;
+  margin-bottom: 90px;
+}
+
 .hiro-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -74,8 +112,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #212121;
+  /* max-width: 695px;
+  padding: 200px 450px 30px; */
 }
+
 .hiro-btn {
   font-family: inherit;
   font-weight: 700;
@@ -88,11 +128,17 @@ body {
   color: #ffffff;
   background-color: var(--accent-color);
   cursor: pointer;
+  border-radius: 4px;
+  /* padding: 350px 700px 200px; */
 }
 
 /* =============SPECIFICATION================*/
 
+.specification {
+  margin-bottom: 95px;
+}
 .specification-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -110,7 +156,11 @@ body {
 
 /* =============PROGEKT================*/
 
+.progekt {
+  padding-bottom: 95px;
+}
 .progekt-title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -121,7 +171,12 @@ body {
 
 /* =============TEAM================*/
 
+.team {
+  padding-bottom: 95px;
+  background: #f5f4fa;
+}
 .team-title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -129,7 +184,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+.team-group {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-name {
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -185,6 +245,14 @@ body {
 
 .footer {
   background-color: #212121;
+}
+.footer-contacts-logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.footer-contacts {
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   font-family: "Raleway";
