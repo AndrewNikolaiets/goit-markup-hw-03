@@ -47,8 +47,22 @@ body {
 }
 
 /* =============HEADER================*/
+
 .header {
+  display: block;
   padding-top: 24px;
+}
+
+.nav-head {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .header-logo {
@@ -59,9 +73,31 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+
 .logo {
   color: #000000;
 }
+
+.header-list {
+  display: flex;
+  margin-left: 90px;
+}
+
+.header-item {
+  margin-right: 50px;
+  /* background-color: tomato; */
+}
+
+.header-list .header-item:last-child {
+  margin-right: 0;
+}
+
+.header-contact {
+  display: flex;
+  margin-left: auto;
+  /* margin-right: auto; */
+}
+
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -69,6 +105,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--btn-color);
 }
+
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
@@ -79,6 +116,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-right: 50px;
 }
 .header-mail:hover,
 .header-mail:focus {
@@ -90,20 +128,23 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  margin-right: 0;
 }
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
 }
 
-/* =============HIRO================*/
+/* =============HERO================*/
 
-.hiro {
+.hero {
   background-color: #212121;
   margin-bottom: 90px;
+  width: 100%;
+  text-align: center;
 }
 
-.hiro-title {
+.hero-title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -112,11 +153,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  /* max-width: 695px;
-  padding: 200px 450px 30px; */
 }
 
-.hiro-btn {
+.hero-btn {
+  display: block;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -136,6 +176,16 @@ body {
 
 .specification {
   margin-bottom: 95px;
+}
+
+.specification-list {
+  display: flex;
+}
+.specification-list .specification-item:last-child {
+  margin-right: 0;
+}
+.specification-item {
+  margin-right: 30px;
 }
 .specification-title {
   margin-bottom: 10px;
@@ -159,6 +209,17 @@ body {
 .progekt {
   padding-bottom: 95px;
 }
+
+.title-list {
+  display: flex;
+}
+.progekt-item {
+  margin-right: 30px;
+}
+.title-list .progekt-item:last-child {
+  margin-right: 0;
+}
+
 .progekt-title {
   padding-bottom: 50px;
   font-weight: 700;
@@ -175,6 +236,19 @@ body {
   padding-bottom: 95px;
   background: #f5f4fa;
 }
+
+.team-list {
+  display: flex;
+}
+
+.team-item {
+  margin-right: 30px;
+}
+
+.team-list .team-item:last-child {
+  margin-right: 0;
+}
+
 .team-title {
   padding-bottom: 50px;
   font-weight: 700;
