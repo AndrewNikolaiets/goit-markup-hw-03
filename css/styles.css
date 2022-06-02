@@ -50,9 +50,12 @@ body {
 
 .header {
   display: block;
-  border: 1px solid #ececec;
+  /* border: 1px solid #ececec; */
   padding-top: 25px;
   padding-bottom: 25px;
+  border-bottom-width: 1px;
+  border-bottom-style: dashed;
+  border-bottom-color: #ececec;
 }
 
 .nav-head {
@@ -145,6 +148,7 @@ body {
   padding-bottom: 200px;
   /* margin-top: 95px;
   margin-bottom: 95px; */
+  text-align: center;
   width: 100%;
   text-align: center;
 }
@@ -158,9 +162,16 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  width: 626px;
+  margin: auto;
 }
 
 .hero-btn {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -170,6 +181,7 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
   border-radius: 4px;
+  margin-top: 30px;
 }
 
 /* =============SPECIFICATION================*/
@@ -213,7 +225,7 @@ body {
 .progekt {
   /* margin-top: 95px;
   margin-bottom: 95px; */
-  padding-top: 95px;
+  /* padding-top: 95px; */
   padding-bottom: 95px;
 }
 
@@ -313,21 +325,22 @@ body {
 .filters-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 
 .filt-btn-list {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .filters-btn {
-  width: 145px;
-  height: 38px;
-  left: 712px;
-  top: 174px;
-
   background: #f5f4fa;
   border-radius: 4px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-color);
 }
 
@@ -380,14 +393,14 @@ body {
 /* =============FOOTER================*/
 
 .footer {
-  margin-top: 95px;
+  /* margin-top: 95px; */
   padding-top: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 60px;
   display: block;
   background-color: #212121;
 }
-.footer-contacts-logo {
-}
+/* .footer-contacts-logo {
+} */
 .footer-contacts {
   display: flex;
   flex-direction: column;
